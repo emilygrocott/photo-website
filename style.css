@@ -13,7 +13,7 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 150px;
+  padding: 30px 100px;
 }
 
 nav ul {
@@ -34,7 +34,7 @@ nav ul a{
 }
 
 nav ul a:hover:not(.active) {
-  background-color:#ddd;
+  color:#ddd;
 }
 
 nav ul a.active {
