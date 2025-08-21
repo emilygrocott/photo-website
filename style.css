@@ -1,5 +1,43 @@
 body {
-  font-family: "Marcellus", serif;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 150px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  margin-right: 25em;
+  list-style: none;
+}
+
+nav ul a{
+  color: #666;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+nav ul a:hover:not(.active) {
+  background-color:#ddd;
+}
+
+nav ul a.active {
+  color: black;
+}
+
