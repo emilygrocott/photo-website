@@ -27,6 +27,8 @@ figure out spacing and centering - making everything centered seems too obvious,
 
 make an icon -> DONE
 
+want the navigation to be different on horizontal and vertical platforms
+
 figure out ways to make the code more modifiable so when I change one thing I don't have to change it in every tab/.html file I have
 future ideas:
     add a journal
