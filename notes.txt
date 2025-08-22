@@ -25,7 +25,7 @@ add a back to top button at the bottom of each page?
 
 figure out spacing and centering - making everything centered seems too obvious, fnd a way to make everything flow 
 
-make an icon 
+make an icon -> DONE
 
 figure out ways to make the code more modifiable so when I change one thing I don't have to change it in every tab/.html file I have
 future ideas:
