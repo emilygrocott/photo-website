@@ -1,0 +1,34 @@
+in portfolio add more links to more photos
+    portfolio will be the menu to all of the photos
+    separate photos and travels, random photos will be in photos and travels will have more specific places
+
+when adding photos, add a feature that when you hover over the photos it says the place or a description
+
+make the photos clickable? so when you click on the photo it expands
+
+add featured photos to the home page
+
+in about me, add more pictures of myself
+
+possibly change color scheme, black and white could stay but play around with colors more
+
+layout of the photos:
+    either do one at a time or more of a collage look?
+    make it different for photos/travels, maybe make travels look more like a postcard/collage 
+        but don't want to have too much white space
+    
+add a feature when the user scrolls, my name shows up in the bottom right hand corner (make it more transparent)
+
+make the menu bar stick no matter how far down the user goes
+
+add a back to top button at the bottom of each page?
+
+figure out spacing and centering - making everything centered seems too obvious, fnd a way to make everything flow 
+
+make an icon 
+
+figure out ways to make the code more modifiable so when I change one thing I don't have to change it in every tab/.html file I have
+future ideas:
+    add a journal
+
+
