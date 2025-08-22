@@ -29,6 +29,8 @@ make an icon -> DONE
 
 want the navigation to be different on horizontal and vertical platforms
 
+have some live photos/gifs kinda 
+
 figure out ways to make the code more modifiable so when I change one thing I don't have to change it in every tab/.html file I have
 future ideas:
     add a journal

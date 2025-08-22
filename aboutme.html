@@ -17,7 +17,21 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="style.css" />
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.row {
+			display: flex;
+		}
+
+		/* Create three equal columns that sits next to each other */
+		.column {
+			flex: 50%;
+			padding: 10px;
+		}
 		h1 {
 			text-align: center;
 		}
@@ -29,7 +43,7 @@
 		<h1>Emily Grocott</h1>
 		<a href="#" id="menu-icon" aria-label="Menu"></a>
 		<ul>
-			<li><a href="index.html">Menu</a></li>
+			<li><a href="index.html">Home</a></li>
 			<li><a class="active" href="aboutme.html">About Me</a></li>
 			<li><a href="travels.html">Travels</a></li>
 			<li><a href="photos.html">Photos</a></li>
