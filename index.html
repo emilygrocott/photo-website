@@ -69,24 +69,7 @@
 		<div class="row">
 			<div class="column">
 				<img src="featured/poland_arch.jpg" alt="Poland Architecture" style="width: 45%" />
-				<img id="boomerang" src="featured/mamosa1.jpeg" alt="Boomerang" style="width: 40%" />
-				<script>
-					const frames = ["featured/mamosa1.jpeg", "featured/mamosa2.jpeg", "featured/mamosa3.jpeg", "featured/mamosa4.jpeg", "featured/mamosa5.jpeg",
-						"featured/mamosa6.jpeg", "featured/mamosa7.jpeg", "featured/mamosa8.jpeg"];
-					let index = 0;
-					let direction = 1; // 1 = forward, -1 = backward
-					const img = document.getElementById("boomerang");
-
-					setInterval(() => {
-					img.src = frames[index];
-					index += direction;
-
-					// Reverse at ends
-					if (index === frames.length - 1 || index === 0) {
-						direction *= -1;
-					}
-					}, 175); // speed in ms
-				</script>
+				<img src="featured/yosemite_valley.jpeg" alt="Poland Architecture" style="width: 45%" />
 			</div>
 		</div>
 	</main>
