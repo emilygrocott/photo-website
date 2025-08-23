@@ -19,6 +19,48 @@
 
 	<!-- Inline Styles (move to style.css if possible) -->
 	<style>
+		* {
+			box-sizing: border-box;
+		}
+		.container {
+			position: relative;
+			text-align: center;
+			color: white;
+		}
+
+		.row {
+			display: flex;
+			justify-content: center; /* centers the images */
+			gap: 2px; /* spacing between images */
+		}
+
+		.column {
+			flex: 1; /* each column takes equal space */
+			max-width: 100%; /* ensures 1 image per row */
+			padding: 3px;
+		}
+
+		.column img {
+			width: 100%; /* makes image fill the column */
+			height: auto;
+			border-radius: 5px; /* optional: rounded corners */
+				}
+		/* Responsive layout */
+		@media screen and (max-width: 500px) {
+			.column {
+			width: 100%;
+			}
+		}
+		.centered {
+			position: absolute;
+			top: 50%; 
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			font-size: 25px;
+			padding: 5px 10px;
+			border-radius: 5px;
+		}
 		h1 {
 			text-align: center;
 		}
@@ -41,7 +83,14 @@
 		<section id="travels">
 			<h2>My Travels</h2>
 			<section class="one-third-port">
-				<!-- Portfolio items go here -->
+			<!-- Portfolio items go here -->
+			<div class="row">
+				<div class="column">
+					<div class="container">
+						<img src="travels/slovakia_mountains.jpg" alt="Slovakia" />
+						<div class="centered" style="color:white">Slovakia</div>
+					</div>
+				</div>
 			</section>
 		</section>
 	</main>
