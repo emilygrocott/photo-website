@@ -25,12 +25,20 @@
 
 		.row {
 			display: flex;
+			justify-content: center; /* centers the images */
+			gap: 10px; /* spacing between images */
 		}
 
-		/* Create two equal columns that sits next to each other */
 		.column {
-			flex: 50%;
-			padding: 5%;
+			flex: 1; /* each column takes equal space */
+			max-width: 33%; /* ensures 3 images per row */
+			padding: 5px;
+		}
+
+		.column img {
+			width: 100%; /* makes image fill the column */
+			height: auto;
+			border-radius: 5px; /* optional: rounded corners */
 		}
 
 		/* Responsive layout */
@@ -70,25 +78,14 @@
 				<!-- Portfolio items go here -->
 			<div class="row">
 				<div class="column">
-					<img id="boomerang" src="featured/mamosa1.jpeg" alt="Boomerang" style="width: 40%" />
-					<script>
-						const frames = ["featured/mamosa1.jpeg", "featured/mamosa2.jpeg", "featured/mamosa3.jpeg", "featured/mamosa4.jpeg", "featured/mamosa5.jpeg",
-							"featured/mamosa6.jpeg", "featured/mamosa7.jpeg", "featured/mamosa8.jpeg"];
-						let index = 0;
-						let direction = 1; // 1 = forward, -1 = backward
-						const img = document.getElementById("boomerang");
-
-						setInterval(() => {
-						img.src = frames[index];
-						index += direction;
-
-						// Reverse at ends
-						if (index === frames.length - 1 || index === 0) {
-							direction *= -1;
-						}
-						}, 175); // speed in ms
-					</script>
+					<img src="photos/grass.jpg" alt="Grass" />
 				</div>
+				<div class="column">
+					<img src="photos/purple_flower.jpg" alt="Flower" />
+				</div>
+				<div class="column">
+					<img src="photos/leaves.jpg" alt="Flower" />
+				</div>				
 			</div>
 			</section>
 		</section>

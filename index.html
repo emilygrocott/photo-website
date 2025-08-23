@@ -22,15 +22,22 @@
 		* {
 			box-sizing: border-box;
 		}
-
 		.row {
 			display: flex;
+			justify-content: center; /* centers the images */
+			gap: 10px; /* spacing between images */
 		}
 
-		/* Create two equal columns that sits next to each other */
 		.column {
-			flex: 50%;
-			padding: 5%;
+			flex: 1; /* each column takes equal space */
+			max-width: 50%; /* ensures 2 images per row */
+			padding: 10px;
+		}
+
+		.column img {
+			width: 100%; /* makes image fill the column */
+			height: auto;
+			border-radius: 5px; /* optional: rounded corners */
 		}
 
 		/* Responsive layout */
@@ -68,8 +75,10 @@
 		</section>
 		<div class="row">
 			<div class="column">
-				<img src="featured/poland_arch.jpg" alt="Poland Architecture" style="width: 45%" />
-				<img src="featured/yosemite_valley.jpeg" alt="Poland Architecture" style="width: 45%" />
+				<img src="featured/poland_arch.jpg" alt="Poland Architecture" />
+			</div>
+			<div class="column">
+				<img src="featured/yosemite_valley.jpeg" alt="Poland Architecture" />
 			</div>
 		</div>
 	</main>
