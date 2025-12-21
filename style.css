@@ -30,3 +30,41 @@ body {
 	li a.active {
 	  color: black;
 	}
+
+  /* gallery - changes depending on screen size */
+  .gallery {
+     display: grid;
+     gap: 15px;
+     /* Default: 3 columns */
+     grid-template-columns: repeat(3, 1fr);
+     align-items: stretch;
+     padding: 0 15px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: 750px; /* height of each picture */
+    object-fit: cover; /* crop to fill the tile */
+    display: block;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 500px) {
+    .gallery img {
+      height: 160px;
+    }
+  }
+
+  /* Medium screens/tablets: 2 columns */
+  @media (max-width: 900px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Small phones: 1 column */
+  @media (max-width: 480px) {
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }

@@ -17,46 +17,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="style.css" />
 
-	<!-- Inline Styles (move to style.css if possible) -->
-	<style>
-		* {
-			box-sizing: border-box;
-		}
-
-		.row {
-			display: flex;
-			justify-content: center; /* centers the images */
-			gap: 2px; /* spacing between images */
-		}
-
-		.column {
-			flex: 1; /* each column takes equal space */
-			max-width: 33%; /* ensures 3 images per row */
-			padding: 2px;
-		}
-
-		.column img {
-			width: 100%; /* makes image fill the column */
-			height: auto;
-			border-radius: 5px; /* optional: rounded corners */
-		}
-
-		/* Responsive layout */
-		@media screen and (max-width: 500px) {
-			.column {
-			width: 100%;
-			}
-		}
-		h1 {
-			text-align: center;
-		}
-		h2 {
-			padding: 25px;
-		}
-		h1 {
-			text-align: center;
-		}
-	</style>
+	<!-- Gallery styles moved to style.css -->
 </head>
 
 <body>
@@ -76,17 +37,11 @@
 			<h2>Photos</h2>
 			<section class="one-third-port">
 				<!-- Portfolio items go here -->
-			<div class="row">
-				<div class="column">
+				<div class="gallery">
 					<img src="photos/grass.jpg" alt="Grass" />
+					<img src="photos/purple_flower.jpg" alt="Purple flower" />
+					<img src="photos/leaves.jpg" alt="Leaves" />
 				</div>
-				<div class="column">
-					<img src="photos/purple_flower.jpg" alt="Flower" />
-				</div>
-				<div class="column">
-					<img src="photos/leaves.jpg" alt="Flower" />
-				</div>				
-			</div>
 			</section>
 		</section>
 	</main>
