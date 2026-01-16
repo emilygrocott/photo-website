@@ -88,22 +88,31 @@
 			<div class="row">
 				<div class="column">
 					<div class="container">
-						<img src="travels/slovakia_mountains.jpg" alt="Slovakia" />
+						<img src="travels/slovakia_mountains.jpg" onclick="openOverlay()"alt="Slovakia" />
 						<div class="overlay-text" style="color:white">Slovakia</div>
 					</div>
 				</div>
 			</div>
 				<div class="column">
 					<div class="container">
-						<img src="travels/acadia_cover.jpg" alt="Acadia National Park" />
+						<img src="travels/acadia_cover.jpg" onclick="openOverlay()" alt="Acadia National Park" />
 						<div class="overlay-text" style="color:white">Acadia Nat'l Park</div>
 					</div>
 				</div>
+			  <!-- Overlay -->
+			<div id="overlay" onclick="closeOverlay()">
+			<div class="overlay-content" onclick="event.stopPropagation()">
+				<img src="travels/slovakia_overlay/tetras.jpg"alt="">
+				<img src="travels/slovakia_overlay/tetras2.jpg" alt="">
+				<img src="travels/slovakia_overlay/tetras3.jpg" alt="">
+			</div>
+			</div>
 			</section>
 		</section>
 	</main>
 
-	<!-- Optional: clearfix div if needed for float-based layout -->
+	<!--clearfix div if needed for float-based layout -->
 	<div class="clearfix"></div>
+	<script src="travels_overlay.js"></script>
 </body>
 </html>
