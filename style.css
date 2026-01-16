@@ -146,6 +146,6 @@ h2 {
   }
 
   @media (max-width: 480px) {
-    #travels .container { 
+    #travels .container {
       padding: 0 10px;}
   }
