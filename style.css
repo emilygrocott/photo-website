@@ -192,3 +192,12 @@ h2 {
 .overlay-content img {
   width: 400px;
 }
+
+ @media (max-width: 900px) {
+   .overlay-content {
+     align-items: center;
+   }
+   .overlay-content img {
+     width: 30%;
+   }
+ }
