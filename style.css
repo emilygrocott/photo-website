@@ -99,9 +99,6 @@ h2 {
 
   /* Small phones: 2 columns */
   @media (max-width: 480px) {
-    .gallery img {
-      height: 300px;
-    }
     .gallery {
       grid-template-columns: repeat(2, 1fr);
       padding: 0 10px;
