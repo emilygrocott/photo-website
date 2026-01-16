@@ -147,5 +147,14 @@ h2 {
 
   @media (max-width: 480px) {
     #travels .container {
-      padding: 0;}
+      padding: 0;
+      max-height: none;
+      aspect-ratio: auto;
+    }
+    #travels .container img {
+      min-height: 400px;
+    }
+    h2 {
+      font-size: 1rem;
+    }
   }
