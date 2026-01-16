@@ -117,6 +117,7 @@ h2 {
     ul {
       padding: 0 10px;
       max-width: none;
+      text-align: center;
     }
     li a {
       padding: 8px 6px;
