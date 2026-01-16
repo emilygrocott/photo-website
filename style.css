@@ -104,7 +104,7 @@ h2 {
   }
 
   /* Small phones: 2 columns */
-  @media (max-width: 480px) {
+  @media (max-width: 500px) {
     .gallery {
       grid-template-columns: repeat(2, 1fr);
       height: 300px;
