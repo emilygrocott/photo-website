@@ -165,4 +165,7 @@ h2 {
       aspect-ratio: 16 / 9;
       margin-bottom: 5px;
     }
+    #travels .overlay-text {
+      font-size: 0.8rem;
+    }
   }
