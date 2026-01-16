@@ -152,9 +152,6 @@ h2 {
       max-height: none;
       aspect-ratio: auto;
     }
-    #travels .container img {
-      min-height: 300px;
-    }
     h2 {
       font-size: 1rem;
     }
