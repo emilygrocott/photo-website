@@ -108,6 +108,13 @@ h2 {
     .gallery {
       grid-template-columns: repeat(2, 1fr);
       height: 300px;
+      padding: 0 20px;
+    }
+    .h2 {
+      padding: 20px 10px;
+    }
+    .ul {
+      padding: 0 10px;
     }
   }
 
