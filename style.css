@@ -12,6 +12,14 @@ body {
   padding: 12px 0;
 }
 
+h2 {
+  padding: 20px 60px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  max-width: 1200px;
+}
+
 /* Profile figure for About page */
 .profile {
   max-width: 335px; /* keeps the photo a reasonable size */
@@ -22,7 +30,7 @@ body {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 5px; /* rounded corners */
+  border-radius: 2px; /* rounded corners */
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 .profile figcaption {
@@ -36,9 +44,10 @@ body {
 }
 	ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0 ;
+    padding: 0 60px;
     overflow: hidden;
+    max-width: 1200px;
   }
 
 	li {
@@ -64,11 +73,13 @@ body {
   /* gallery (changes depending on screen size) */
   .gallery {
      display: grid;
-     gap: 15px;
+     gap: 8px;
      /* 3 columns */
      grid-template-columns: repeat(3, 1fr);
      align-items: stretch;
-     padding: 0 15px;
+     padding: 0 60px;
+     max-width: 1200px;
+     margin: 0 auto;
   }
 
   .gallery img {
@@ -76,7 +87,7 @@ body {
     /* keep gallery behavior but use specific rules for travel tiles below */
     object-fit: cover; /* crop to fill the tile */
     display: block;
-    border-radius: 5px;
+    border-radius: 2px;
   }
 
   @media (max-width: 500px) {
@@ -92,10 +103,10 @@ body {
     }
   }
 
-  /* Small phones: 1 column */
+  /* Small phones: 2 columns */
   @media (max-width: 480px) {
     .gallery {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
@@ -104,10 +115,11 @@ body {
     width: 100%;
     aspect-ratio: 16 / 9; /* widescreen */
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 2px;
     position: relative;
     margin-bottom: 10px;
     max-height: 550px;
+    padding: 30px;
   }
 
   #travels .container img {
