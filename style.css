@@ -89,11 +89,7 @@ h2 {
     display: block;
     border-radius: 2px;
   }
-  .gallery img:hover {
-    filter: brightness(90%);
-    cursor: pointer;
-  }
-  
+
   /* Medium screens/tablets: 2 columns */
   @media (max-width: 900px) {
     .gallery {
@@ -150,6 +146,10 @@ h2 {
     object-fit: cover; /* fill and crop consistently */
     display: block;
   }
+  #travels .container img:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+  }
 
   @media (max-width: 480px) {
     #travels .container {
@@ -157,7 +157,6 @@ h2 {
       max-height: none;
       aspect-ratio: auto;
     }
-
     h2 {
       font-size: 1rem;
     }
