@@ -143,9 +143,19 @@ h2 {
     object-fit: cover; /* fill and crop consistently */
     display: block;
   }
+
   #travels .container img:hover {
     filter: brightness(90%);
     cursor: pointer;
+  }
+
+  #travels .overlay-text {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: white;
+    font-size: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
   }
 
   @media (max-width: 480px) {
@@ -154,6 +164,9 @@ h2 {
       max-height: none;
       aspect-ratio: 16 / 9;
       margin-bottom: 5px;
+    }
+    #travels .overlay-text {
+      font-size: 0.85rem;
     }
     #travels h2 {
       font-size: 0.70rem;
