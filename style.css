@@ -117,6 +117,7 @@ h2 {
     ul {
       padding: 0;
       max-width: none;
+      margin: 0 auto;
       text-align: center;
     }
     li a {
