@@ -107,7 +107,6 @@ h2 {
   @media (max-width: 480px) {
     .gallery {
       grid-template-columns: repeat(2, 1fr);
-      height: 300px;
       padding: 0 10px;
     }    
     h2 {
@@ -119,6 +118,11 @@ h2 {
       max-width: none;
       margin: 0 auto;
       text-align: center;
+      width: 100%;
+    }
+    li {
+      float: none;
+      display: inline-block;
     }
     li a {
       padding: 10px 8px;
