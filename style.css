@@ -92,7 +92,7 @@ h2 {
 
   @media (max-width: 500px) {
     .gallery img {
-      height: 300px;
+      height: 200px;
     }
   }
 
@@ -132,11 +132,11 @@ h2 {
     width: 100%;
     aspect-ratio: 16 / 9; /* widescreen */
     overflow: hidden;
-    border-radius: 2px;
+    border-radius: 8px;
     position: relative;
     margin-bottom: 10px;
     max-height: 550px;
-    padding: 30px;
+    padding: 0;
   }
 
   #travels .container img {
@@ -153,7 +153,7 @@ h2 {
       aspect-ratio: auto;
     }
     #travels .container img {
-      min-height: 400px;
+      min-height: 300px;
     }
     h2 {
       font-size: 1rem;
