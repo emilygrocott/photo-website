@@ -110,14 +110,11 @@ h2 {
       height: 300px;
       padding: 0 10px;
     }
-    .h2 {
+    h2 {
       padding: 5px 5px;
     }
-    .ul {
+    ul {
       padding: 0 5px;
-    }
-    li a{
-      padding: 7px 8px;
     }
   }
 
