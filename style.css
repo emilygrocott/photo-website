@@ -152,8 +152,7 @@ h2 {
     #travels .container {
       padding: 0;
       max-height: none;
-      aspect-ratio: auto;
-      max-height: 50px;
+      aspect-ratio: 16 / 9;
     }
     h2 {
       font-size: 1rem;
