@@ -150,9 +150,9 @@ h2 {
 
   @media (max-width: 480px) {
     #travels .container {
-      padding: 0;
+      padding: 0px 0px;
       max-height: none;
-      aspect-ratio: 21 / 9;
+      aspect-ratio: 16 / 9;
     }
     #travels h2 {
       font-size: 0.9rem;
