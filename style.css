@@ -144,5 +144,7 @@ h2 {
   }
 
   @media (max-width: 480px) {
-    #travels .container { aspect-ratio: 3 / 2; }
+    #travels .container { 
+      aspect-ratio: 3 / 2; 
+      padding: 10px;}
   }
