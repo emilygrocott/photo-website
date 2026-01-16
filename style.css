@@ -14,7 +14,7 @@ body {
 
 h2 {
   padding: 20px 60px;
-  margin: 0;
+  margin: 0 auto;
   font-weight: 600;
   font-size: 1.2rem;
   max-width: 1200px;
