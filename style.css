@@ -112,10 +112,11 @@ h2 {
     }
     ul {
       padding: 0 10px;
+      max-width: none;
     }
     li a {
-      padding: 10px 8px;
-      font-size: 0.9rem;
+      padding: 8px 6px;
+      font-size: 0.85rem;
     }
   }
 
