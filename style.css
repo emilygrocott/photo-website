@@ -107,7 +107,7 @@ h2 {
   @media (max-width: 480px) {
     .gallery {
       grid-template-columns: repeat(2, 1fr);
-      height: 300 px;
+      height: 300px;
     }
   }
 
