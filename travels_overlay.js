@@ -36,6 +36,15 @@ document.addEventListener("DOMContentLoaded", () => {
         'travels/acadia_overlay/acadia3.jpg',
         'travels/acadia_overlay/acadia4.jpg',
         'travels/acadia_overlay/acadia5.jpg'
+      ],
+      roadtrip:[
+        'travels/roadtrip_overlay/roadtrip1.jpg',
+        'travels/roadtrip_overlay/roadtrip2.jpg',
+        'travels/roadtrip_overlay/roadtrip3.jpg',
+        'travels/roadtrip_overlay/roadtrip4.jpg',
+        'travels/roadtrip_overlay/roadtrip5.jpg',
+        'travels/roadtrip_overlay/roadtrip6.jpg',
+        'travels/roadtrip_overlay/roadtrip7.jpg'
       ]
     };
 
