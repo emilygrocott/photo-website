@@ -171,7 +171,7 @@ h2 {
   }
 
 /* Overlay background */
-#overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -179,8 +179,7 @@ h2 {
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   display: none;
-  justify-content: center;
-  align-items: center;
+  outline: 30px solid red;
 }
 
 /* Overlay images container */
@@ -189,17 +188,26 @@ h2 {
   gap: 5px;
   /* 3 columns */
   grid-template-columns: repeat(3, 1fr);
-  align-items: stretch;
-  padding: 0 5px;
+  padding: 10px;
+  max-width: 1200px;
+  width: calc(100% - 40px);
+  margin: 40px auto;
+  max-height: calc(100vh - 80px); /* leaves clickable background */
+  overflow-y: auto;   /* enable scroll */
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  justify-items: center;
 }
 
+
 .overlay-content img {
-  width: 400px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
  @media (max-width: 900px) {
    .overlay-content {
-     align-items: center;
      grid-template-columns: repeat(2, 1fr);
    }
    .overlay-content img {
