@@ -205,7 +205,7 @@ h2 {
    .overlay-content {
      grid-template-columns: repeat(2, 1fr);
      gap: 10px 0px;
-     padding: 0 75px;
+     padding: 0 10px;
    }
    .overlay-content img {
      width: 95%;
