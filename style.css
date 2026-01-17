@@ -185,8 +185,12 @@ h2 {
 
 /* Overlay images container */
 .overlay-content {
-  display: flex;
-  gap: 15px;
+  display: grid;
+  gap: 5px;
+  /* 3 columns */
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  padding: 0 5px;
 }
 
 .overlay-content img {
@@ -196,8 +200,13 @@ h2 {
  @media (max-width: 900px) {
    .overlay-content {
      align-items: center;
+     grid-template-columns: repeat(2, 1fr);
    }
    .overlay-content img {
-     width: 30%;
+     width: 90%;
    }
  }
+
+ body.no-scroll {
+  overflow: hidden;
+}
