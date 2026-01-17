@@ -23,28 +23,28 @@ document.addEventListener("DOMContentLoaded", () => {
     // Define image arrays per destination
     const galleries = {
       slovakia: [
-        'travels/slovakia_overlay/tetras.jpg',
-        'travels/slovakia_overlay/tetras2.jpg',
-        'travels/slovakia_overlay/tetras3.jpg',
-        'travels/slovakia_overlay/tetras4.jpg',
-        'travels/slovakia_overlay/tetras5.jpg',
-        'travels/slovakia_overlay/tetras6.jpg'
+        'travels/slovakia_overlay/tetras.jpeg',
+        'travels/slovakia_overlay/tetras2.jpeg',
+        'travels/slovakia_overlay/tetras3.jpeg',
+        'travels/slovakia_overlay/tetras4.jpeg',
+        'travels/slovakia_overlay/tetras5.jpeg',
+        'travels/slovakia_overlay/tetras6.jpeg'
       ],
       acadia: [
-        'travels/acadia_overlay/acadia1.jpg',
-        'travels/acadia_overlay/acadia2.jpg',
-        'travels/acadia_overlay/acadia3.jpg',
-        'travels/acadia_overlay/acadia4.jpg',
-        'travels/acadia_overlay/acadia5.jpg'
+        'travels/acadia_overlay/acadia1.jpeg',
+        'travels/acadia_overlay/acadia2.jpeg',
+        'travels/acadia_overlay/acadia3.jpeg',
+        'travels/acadia_overlay/acadia4.jpeg',
+        'travels/acadia_overlay/acadia5.jpeg'
       ],
       roadtrip:[
-        'travels/roadtrip_overlay/roadtrip1.jpg',
-        'travels/roadtrip_overlay/roadtrip2.jpg',
-        'travels/roadtrip_overlay/roadtrip3.jpg',
-        'travels/roadtrip_overlay/roadtrip4.jpg',
-        'travels/roadtrip_overlay/roadtrip5.jpg',
-        'travels/roadtrip_overlay/roadtrip6.jpg',
-        'travels/roadtrip_overlay/roadtrip7.jpg'
+        'travels/roadtrip_overlay/roadtrip1.jpeg',
+        'travels/roadtrip_overlay/roadtrip2.jpeg',
+        'travels/roadtrip_overlay/roadtrip3.jpeg',
+        'travels/roadtrip_overlay/roadtrip4.jpeg',
+        'travels/roadtrip_overlay/roadtrip5.jpeg',
+        'travels/roadtrip_overlay/roadtrip6.jpeg',
+        'travels/roadtrip_overlay/roadtrip7.jpeg'
       ]
     };
 
