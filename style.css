@@ -26,32 +26,45 @@ h2 {
 /* =========================================================
    NAV BAR
    ========================================================= */
+  
+header.intro {
+  display: flex;                
+  align-items: center;          
+  justify-content: space-between; /* icon left, menu right */
+  padding: 10px 20px;
+}
 
-ul {
+/* Decorative icon */
+#menu-icon img {
+  width: 50px;    /* adjust icon size */
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+/* Navigation menu */
+header.intro ul {
+  display: flex;
   list-style: none;
   margin: 0;
-  padding: 0 60px;
-  max-width: 1200px;
-  overflow: hidden;
+  padding: 0;
+  gap: 10px;                     /* spacing between links */
 }
 
-li {
-  float: left;
-}
 
-li a {
+header.intro ul li a {
   display: block;
-  padding: 14px 16px;
+  padding: 1px 16px;
   text-align: center;
   text-decoration: none;
   color: #666;
 }
 
-li a:hover:not(.active) {
+header.intro ul li a:hover:not(.active) {
   color: #ddd;
 }
 
-li a.active {
+header.intro ul li a.active {
   color: #000;
 }
 
@@ -180,26 +193,6 @@ body.no-scroll {
 
 
 /* =========================================================
-   DECORATIVE IMAGE
-   ========================================================= */
-
-.top-left-photo {
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
-  margin-top: 75px;
-}
-
-.top-left-photo img {
-  max-width: 100px;
-  border-radius: 10px;
-  opacity: 0.9;
-}
-
-
-/* =========================================================
    RESPONSIVE STYLES
    ========================================================= */
 
@@ -217,20 +210,12 @@ body.no-scroll {
     max-width: none;
   }
 
-  /* Navigation */
-  ul {
-    padding: 0;
-    max-width: none;
-    width: 100%;
-    text-align: center;
+  header.intro ul li {
+    float: none;             /* remove float for small screens */
+    display: block;
   }
 
-  li {
-    float: none;
-    display: inline-block;
-  }
-
-  li a {
+  header.intro ul li a {
     padding: 10px 8px;
     font-size: 0.95rem;
   }
