@@ -1,3 +1,7 @@
+/* =========================================================
+   BASE TYPOGRAPHY
+   ========================================================= */
+
 body {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
@@ -5,11 +9,9 @@ body {
   font-style: normal;
 }
 
-/* centers the site title in the header across pages */
 .intro h1 {
   text-align: center;
   margin: 0;
-  padding: 75px 0 30px 0;
 }
 
 h2 {
@@ -20,198 +22,245 @@ h2 {
   max-width: 1200px;
 }
 
-/* Profile figure for About page */
-.profile {
-  max-width: 335px; /* keeps the photo a reasonable size */
-  margin: 0 auto; /* center horizontally */
-  text-align: center; /* center caption */
+
+/* =========================================================
+   NAV BAR
+   ========================================================= */
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 60px;
+  max-width: 1200px;
+  overflow: hidden;
 }
-.profile img {
-  width: 100%;
-  height: auto;
+
+li {
+  float: left;
+}
+
+li a {
   display: block;
-  border-radius: 2px; /* rounded corners */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #666;
 }
+
+li a:hover:not(.active) {
+  color: #ddd;
+}
+
+li a.active {
+  color: #000;
+}
+
+
+/* =========================================================
+   SHARED IMAGE RULES
+   ========================================================= */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* =========================================================
+   ABOUT PAGE – PROFILE
+   ========================================================= */
+
+.profile {
+  max-width: 335px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile img {
+  border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
 .profile figcaption {
   margin-top: 8px;
   font-size: 0.95rem;
   color: #666;
 }
 
-@media (max-width: 480px) {
-  .profile { max-width: 220px; }
-}
-	ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0 60px;
-    overflow: hidden;
-    max-width: 1200px;
-  }
 
-	li {
-	  float: left;
-	}
+/* =========================================================
+   GRID LAYOUTS (GALLERY + OVERLAY)
+   ========================================================= */
 
-	li a {
-    display: block;
-    color: #666;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-	}
-
-	li a:hover:not(.active) {
-	  color: #ddd;
-	}
-
-	li a.active {
-	  color: black;
-	}
-
-  /* gallery (changes depending on screen size) */
-  .gallery {
-     display: grid;
-     gap: 20px;
-     /* 3 columns */
-     grid-template-columns: repeat(3, 1fr);
-     align-items: stretch;
-     padding: 0 10px;
-     max-width: 1300px;
-     margin: 0 auto;
-  }
-
-  .gallery img {
-    width: 100%;
-    /* keep gallery behavior but use specific rules for travel tiles below */
-    object-fit: cover; /* crop to fill the tile */
-    display: block;
-    border-radius: 2px;
-    }
-
-  /* Small phones: 2 columns */
-  @media (max-width: 900px) {
-    .gallery {
-      grid-template-columns: repeat(2, 1fr);
-      padding: 0 10px;
-    }
-    .gallery img {
-      width: 102%;
-    }    
-    h2 {
-      padding: 10px 10px;
-      max-width: none;
-    }    
-    ul {
-      padding: 0;
-      max-width: none;
-      margin: 0 auto;
-      text-align: center;
-      width: 100%;
-    }
-    li {
-      float: none;
-      display: inline-block;
-    }
-    li a {
-      padding: 10px 8px;
-      font-size: 0.95rem;
-      text-align: center;
-      }
-  }
-
-  /* travel page specific styles */
-  #travels .container {
-    width: 100%;
-    aspect-ratio: 16 / 9; /* widescreen */
-    overflow: hidden;
-    border-radius: 8px;
-    position: relative;
-    margin-bottom: 1px;
-    max-height: 550px;
-    padding: 0;
-  }
-
-  #travels .container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* fill and crop consistently */
-    display: block;
-  }
-
-  #travels .container img:hover {
-    filter: brightness(75%);
-    cursor: pointer;
-  }
-
-  #travels .overlay-text {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    color: white;
-    font-size: 1.3rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-  }
-
-  @media (max-width: 900px) {
-    #travels .container {
-      padding: 0px 0px;
-      max-height: none;
-      border-radius: 4px;
-    }
-    #travels .overlay-text {
-      font-size: 0.95rem;
-    }
-  }
-
-/* Overlay background */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: none;
-  outline: 30px solid red;
-}
-
-/* Overlay images container */
+.gallery,
 .overlay-content {
   display: grid;
-  gap: 5px;
-  /* 3 columns */
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Gallery */
+.gallery {
   grid-template-columns: repeat(3, 1fr);
+  padding: 0 10px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* Overlay grid */
+.overlay-content {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
   padding: 10px;
   max-width: 1200px;
   width: calc(100% - 40px);
   margin: 40px auto;
-  max-height: calc(100vh - 80px); /* leaves clickable background */
-  overflow-y: auto;   /* enable scroll */
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  justify-items: center;
 }
 
 
-.overlay-content img {
+/* =========================================================
+   TRAVEL PAGE – FEATURE TILES
+   ========================================================= */
+
+#travels .container {
+  position: relative;
   width: 100%;
-  height: auto;
-  display: block;
+  aspect-ratio: 16 / 9;
+  max-height: 550px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1px;
 }
 
- @media (max-width: 900px) {
-   .overlay-content {
-     grid-template-columns: repeat(2, 1fr);
-     gap: 10px 0px;
-     padding: 0 10px;
-   }
-   .overlay-content img {
-     width: 95%;
-   }
- }
+#travels .container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
- body.no-scroll {
+#travels .container img:hover {
+  filter: brightness(75%);
+  cursor: pointer;
+}
+
+#travels .overlay-text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 1.3rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+/* =========================================================
+   FULLSCREEN OVERLAY (MODAL)
+   ========================================================= */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+body.no-scroll {
   overflow: hidden;
+}
+
+
+/* =========================================================
+   DECORATIVE IMAGE
+   ========================================================= */
+
+.top-left-photo {
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  margin-top: 75px;
+}
+
+.top-left-photo img {
+  max-width: 100px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+
+/* =========================================================
+   RESPONSIVE STYLES
+   ========================================================= */
+
+@media (max-width: 480px) {
+  .profile {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  /* Headings */
+  h2 {
+    padding: 10px;
+    max-width: none;
+  }
+
+  /* Navigation */
+  ul {
+    padding: 0;
+    max-width: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  li {
+    float: none;
+    display: inline-block;
+  }
+
+  li a {
+    padding: 10px 8px;
+    font-size: 0.95rem;
+  }
+
+  /* Grids */
+  .gallery,
+  .overlay-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery img {
+    width: 102%;
+  }
+
+  .overlay-content {
+    gap: 10px 0;
+    padding: 0 10px;
+  }
+
+  .overlay-content img {
+    width: 95%;
+  }
+
+  /* Travel tiles */
+  #travels .container {
+    max-height: none;
+    border-radius: 4px;
+  }
+
+  #travels .overlay-text {
+    font-size: 0.95rem;
+  }
 }
