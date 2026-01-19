@@ -70,17 +70,23 @@
 
 <body>
 	<header class="intro">
-	<!-- Decorative icon -->
-	<div id="menu-icon">
-		<img src="img/icon.png" alt="Home icon">
-	</div>
-	<!-- Navigation menu -->
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a class="active" href="travels.html">Travels</a></li>
-			<li><a href="photos.html">Photos</a></li>
-			<li><a href="aboutme.html">About Me</a></li>
-		</ul>
+		<!-- Decorative icon -->
+		<div id="menu-icon">
+			<img src="img/icon.png" alt="Home icon">
+		</div>
+		<!-- Hamburger button (hidden on large screens) -->
+		<button id="hamburger" aria-label="Toggle menu">
+			&#9776; <!-- hamburger icon -->
+		</button>
+		<!-- Navigation menu -->
+		<nav> 
+			<ul id="nav-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="travels.html">Travels</a></li>
+				<li><a href="photos.html">Photos</a></li>
+				<li><a href="aboutme.html">About Me</a></li>
+			</ul>
+		</nav>
 	</header>
 
 	<main>
@@ -106,7 +112,7 @@
 			<div class="column">
 			<div class="container">
 				<img src="travels/roadtrip_cover.jpg" onclick="openOverlay('roadtrip')" alt="CO/NM/AZ/UT Roadtrip" />
-				<div class="overlay-text" style="color:white">CO/NM/AZ/UT</div>
+				<div class="overlay-text" style="color:white">CO/NM/AZ/UT Roadtrip</div>
 			</div>
 			</div>
 
@@ -120,8 +126,9 @@
 		</section>
 	</main>
 
-	<!--clearfix div if needed for float-based layout -->
+	<!--clearfix needed for float-based layout -->
 	<div class="clearfix"></div>
 	<script src="travels_overlay.js"></script>
+	<script src="nav_bar.js"></script>
 </body>
 </html>

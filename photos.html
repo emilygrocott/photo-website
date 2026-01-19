@@ -21,18 +21,25 @@
 
 <body>
 	<header class="intro">
-	<!-- Decorative icon -->
-	<div id="menu-icon">
-		<img src="img/icon.png" alt="Home icon">
-	</div>
+		<!-- Decorative icon -->
+		<div id="menu-icon">
+			<img src="img/icon.png" alt="Home icon">
+		</div>
 
-	<!-- Navigation menu -->
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="travels.html">Travels</a></li>
-			<li><a class="active" href="photos.html">Photos</a></li>
-			<li><a href="aboutme.html">About Me</a></li>		
-		</ul>
+		<!-- Hamburger button (hidden on large screens) -->
+		<button id="hamburger" aria-label="Toggle menu">
+		&#9776; <!-- hamburger icon -->
+		</button>
+
+		<!-- Navigation menu -->
+		<nav> 
+			<ul id="nav-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="travels.html">Travels</a></li>
+				<li><a class="active" href="photos.html">Photos</a></li>
+				<li><a href="aboutme.html">About Me</a></li>		
+			</ul>
+		</nav>
 	</header>
 
 	<main>
@@ -49,7 +56,9 @@
 		</section>
 	</main>
 
-	<!-- Optional: clearfix div if needed for float-based layout -->
+	<!-- clearfix div for float-based layout -->
 	<div class="clearfix"></div>
+	<script src="nav_bar.js"></script>
+
 </body>
 </html>

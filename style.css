@@ -32,6 +32,7 @@ header.intro {
   align-items: center;          
   justify-content: space-between; /* icon left, menu right */
   padding: 10px 20px;
+  justify-content: space-between; /* icon left, hamburger/menu right */
 }
 
 /* Decorative icon */
@@ -43,29 +44,36 @@ header.intro {
 }
 
 /* Navigation menu */
-header.intro ul {
+nav ul {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 10px;                     /* spacing between links */
+  gap: 50px;
 }
 
-
-header.intro ul li a {
-  display: block;
-  padding: 1px 16px;
-  text-align: center;
+nav ul li a {
   text-decoration: none;
   color: #666;
+  font-weight: 500;
 }
 
-header.intro ul li a:hover:not(.active) {
+nav ul li a.active {
+  color: #000;
+}
+
+nav ul li a:hover:not(.active) {
   color: #ddd;
 }
 
-header.intro ul li a.active {
-  color: #000;
+/* Hamburger button */
+#hamburger {
+  display: none;        /* hidden on large screens */
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto; 
 }
 
 
@@ -204,21 +212,45 @@ body.no-scroll {
 
 @media (max-width: 900px) {
 
+    /* Show hamburger */
+  #hamburger {
+    display: block;
+  }
+
+  /* Hide nav menu by default */
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    margin-top: 10px;
+  }
+
+  #nav-menu li {
+    text-align: center;
+  }
+
+  #nav-menu li a {
+    display: block;
+    padding: 10px 0;
+  }
+
+  /* Show menu when active */
+  #nav-menu.active {
+    display: flex;
+  }
+
+  /* Stack icon and hamburger */
+  header.intro {
+    flex-wrap: wrap;
+  }
+
   /* Headings */
   h2 {
     padding: 10px;
     max-width: none;
   }
 
-  header.intro ul li {
-    float: none;             /* remove float for small screens */
-    display: block;
-  }
-
-  header.intro ul li a {
-    padding: 10px 8px;
-    font-size: 0.95rem;
-  }
 
   /* Grids */
   .gallery,
