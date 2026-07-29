@@ -74,6 +74,7 @@ nav ul li a:hover:not(.active) {
   border: none;
   cursor: pointer;
   margin-left: auto; 
+  color: rgb(51, 51, 51);
 }
 
 
