@@ -10,11 +10,18 @@ if (!navOverlay) {
   document.body.appendChild(navOverlay);
 }
 
+const handleOutsideClick = (event) => {
+  if (!navMenu.classList.contains('active')) return;
+  if (navMenu.contains(event.target) || hamburger.contains(event.target)) return;
+  closeMenu();
+};
+
 const openMenu = () => {
   navMenu.classList.add('active');
   navOverlay.classList.add('active');
   hamburger.textContent = '×';
   body.classList.add('no-scroll');
+  document.addEventListener('click', handleOutsideClick);
 };
 
 const closeMenu = () => {
@@ -22,9 +29,11 @@ const closeMenu = () => {
   navOverlay.classList.remove('active');
   hamburger.textContent = '☰';
   body.classList.remove('no-scroll');
+  document.removeEventListener('click', handleOutsideClick);
 };
 
-hamburger.addEventListener('click', () => {
+hamburger.addEventListener('click', (event) => {
+  event.stopPropagation();
   if (navMenu.classList.contains('active')) {
     closeMenu();
   } else {
