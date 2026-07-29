@@ -1,19 +1,41 @@
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
+const body = document.body;
+
+// Create overlay backdrop for mobile menu if not already present
+let navOverlay = document.getElementById('nav-overlay');
+if (!navOverlay) {
+  navOverlay = document.createElement('div');
+  navOverlay.id = 'nav-overlay';
+  document.body.appendChild(navOverlay);
+}
+
+const openMenu = () => {
+  navMenu.classList.add('active');
+  navOverlay.classList.add('active');
+  hamburger.textContent = '×';
+  body.classList.add('no-scroll');
+};
+
+const closeMenu = () => {
+  navMenu.classList.remove('active');
+  navOverlay.classList.remove('active');
+  hamburger.textContent = '☰';
+  body.classList.remove('no-scroll');
+};
 
 hamburger.addEventListener('click', () => {
-  // Toggle nav menu
-  navMenu.classList.toggle('active');
-
-  // Toggle hamburger ↔ X
-  hamburger.textContent = navMenu.classList.contains('active') ? "x" : "☰";
+  if (navMenu.classList.contains('active')) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
 });
+
+navOverlay.addEventListener('click', closeMenu);
 
 // Close menu when any link is clicked
 const navLinks = navMenu.querySelectorAll('a');
 navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    navMenu.classList.remove('active');
-    hamburger.textContent = "☰"; // reset icon
-  });
+  link.addEventListener('click', closeMenu);
 });
