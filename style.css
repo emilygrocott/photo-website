@@ -205,6 +205,7 @@ body.no-scroll {
   background: rgba(255, 255, 255, 0.8);
   display: none;
   z-index: 15;
+  pointer-events: auto;
 }
 
 #nav-overlay.active {

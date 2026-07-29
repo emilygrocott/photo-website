@@ -21,7 +21,7 @@ const openMenu = () => {
   navOverlay.classList.add('active');
   hamburger.textContent = '×';
   body.classList.add('no-scroll');
-  document.addEventListener('click', handleOutsideClick);
+  document.addEventListener('pointerdown', handleOutsideClick);
 };
 
 const closeMenu = () => {
@@ -29,7 +29,7 @@ const closeMenu = () => {
   navOverlay.classList.remove('active');
   hamburger.textContent = '☰';
   body.classList.remove('no-scroll');
-  document.removeEventListener('click', handleOutsideClick);
+  document.removeEventListener('pointerdown', handleOutsideClick);
 };
 
 hamburger.addEventListener('click', (event) => {
