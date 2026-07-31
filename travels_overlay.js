@@ -80,7 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
         'travels/slovakia_overlay/tetras4.jpeg',
         'travels/slovakia_overlay/tetras5.jpeg',
         'travels/slovakia_overlay/tetras6.jpeg',
-        'travels/slovakia_overlay/tetras7.jpeg'
+        'travels/slovakia_overlay/tetras7.jpeg',
+        'travels/slovakia_overlay/tetras8.jpeg'
       ],
       acadia: [
         'travels/acadia_overlay/acadia1.jpeg',
