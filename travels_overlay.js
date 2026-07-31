@@ -73,6 +73,25 @@ document.addEventListener("DOMContentLoaded", () => {
     overlayContent.innerHTML = '';
 
     const galleries = {
+            roadtrip: [
+        'travels/roadtrip_overlay/roadtrip1.jpeg',
+        'travels/roadtrip_overlay/roadtrip6.jpeg',
+        'travels/roadtrip_overlay/roadtrip7.jpeg',
+        'travels/roadtrip_overlay/roadtrip15.jpeg',
+        'travels/roadtrip_overlay/roadtrip5.jpeg',
+        'travels/roadtrip_overlay/roadtrip2.jpeg',
+        'travels/roadtrip_overlay/roadtrip3.jpeg',
+        'travels/roadtrip_overlay/roadtrip8.jpeg',
+        'travels/roadtrip_overlay/roadtrip9.jpeg',
+        'travels/roadtrip_overlay/roadtrip10.jpeg',
+        'travels/roadtrip_overlay/roadtrip11.jpeg',
+        'travels/roadtrip_overlay/roadtrip12.jpeg',
+        'travels/roadtrip_overlay/roadtrip13.jpeg',
+        'travels/roadtrip_overlay/roadtrip14.jpeg',
+        'travels/roadtrip_overlay/roadtrip4.jpeg',
+        'travels/roadtrip_overlay/roadtrip16.jpeg',
+        'travels/roadtrip_overlay/roadtrip17.jpeg'
+      ],
       slovakia: [
         'travels/slovakia_overlay/tetras.jpeg',
         'travels/slovakia_overlay/tetras2.jpeg',
@@ -94,25 +113,6 @@ document.addEventListener("DOMContentLoaded", () => {
         'travels/acadia_overlay/acadia4.jpeg',
         'travels/acadia_overlay/acadia9.jpeg',
         'travels/acadia_overlay/acadia10.jpeg'
-      ],
-      roadtrip: [
-        'travels/roadtrip_overlay/roadtrip1.jpeg',
-        'travels/roadtrip_overlay/roadtrip6.jpeg',
-        'travels/roadtrip_overlay/roadtrip7.jpeg',
-        'travels/roadtrip_overlay/roadtrip15.jpeg',
-        'travels/roadtrip_overlay/roadtrip5.jpeg',
-        'travels/roadtrip_overlay/roadtrip2.jpeg',
-        'travels/roadtrip_overlay/roadtrip3.jpeg',
-        'travels/roadtrip_overlay/roadtrip8.jpeg',
-        'travels/roadtrip_overlay/roadtrip9.jpeg',
-        'travels/roadtrip_overlay/roadtrip10.jpeg',
-        'travels/roadtrip_overlay/roadtrip11.jpeg',
-        'travels/roadtrip_overlay/roadtrip12.jpeg',
-        'travels/roadtrip_overlay/roadtrip13.jpeg',
-        'travels/roadtrip_overlay/roadtrip14.jpeg',
-        'travels/roadtrip_overlay/roadtrip4.jpeg',
-        'travels/roadtrip_overlay/roadtrip16.jpeg',
-        'travels/roadtrip_overlay/roadtrip17.jpeg'
       ]
     };
 
