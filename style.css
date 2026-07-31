@@ -118,7 +118,7 @@ img {
 .gallery,
 .overlay-content {
   display: grid;
-  gap: 15px;
+  gap: 12px;
   justify-items: center;
 }
 
