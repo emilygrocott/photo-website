@@ -87,8 +87,13 @@ document.addEventListener("DOMContentLoaded", () => {
         'travels/acadia_overlay/acadia1.jpeg',
         'travels/acadia_overlay/acadia2.jpeg',
         'travels/acadia_overlay/acadia3.jpeg',
+        'travels/acadia_overlay/acadia8.jpeg',
+        'travels/acadia_overlay/acadia6.jpeg',
+        'travels/acadia_overlay/acadia5.jpeg',
+        'travels/acadia_overlay/acadia7.jpeg',
         'travels/acadia_overlay/acadia4.jpeg',
-        'travels/acadia_overlay/acadia5.jpeg'
+        'travels/acadia_overlay/acadia9.jpeg',
+        'travels/acadia_overlay/acadia10.jpeg'
       ],
       roadtrip: [
         'travels/roadtrip_overlay/roadtrip1.jpeg',
