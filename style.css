@@ -30,14 +30,30 @@ h2 {
 header.intro {
   display: flex;                
   align-items: center;          
-  justify-content: space-between; /* icon left, menu right */
+  justify-content: flex-end;
   padding: 10px 20px;
-  justify-content: space-between; /* icon left, hamburger/menu right */
+}
+
+nav {
+  margin-left: auto;
 }
 
 /* Decorative icon */
+#menu-icon {
+  position: fixed;
+  right: 22px;
+  bottom: 18px;
+  z-index: 30;
+  opacity: 0.45;
+  transition: opacity 0.2s ease;
+}
+
+#menu-icon:hover {
+  opacity: 0.75;
+}
+
 #menu-icon img {
-  width: 50px;    /* adjust icon size */
+  width: 46px;
   height: auto;
   display: block;
   border-radius: 5px;
@@ -47,7 +63,7 @@ header.intro {
 nav ul {
   display: flex;
   list-style: none;
-  margin: 0;
+  margin: 0 0 0 auto;
   padding: 0;
   gap: 50px;
 }
@@ -231,6 +247,8 @@ body.no-scroll {
     display: block;
     position: relative;
     z-index: 21;
+    margin-left: auto;
+    margin-right: 0;
   }
 
   /* Hide nav menu by default */
@@ -268,7 +286,9 @@ body.no-scroll {
 
   /* Stack icon and hamburger */
   header.intro {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 12px;
   }
 
   /* Headings */
